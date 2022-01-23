@@ -1,0 +1,335 @@
+@import "../mixins/flex";
+
+// Generals
+.menu_btn {
+  display: none;
+  color: var(--white);
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.788);
+  opacity: 0.8 !important;
+  position: absolute;
+  top: 0 !important;
+  left: 0;
+  margin: 0;
+  z-index: 000;
+}
+.show_navbar {
+  width: 100%;
+  height: 100vh;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  opacity: 1 !important;
+  @include flex(row);
+
+  .nav_inner_container {
+    width: 50%;
+    height: 90vh !important;
+    background: var(--textcolor);
+    @include flex(column);
+    justify-content: space-evenly;
+    border-radius: 50px;
+  }
+}
+
+.close_navbar {
+  color: white;
+  font-size: 2rem;
+  position: relative;
+  right: -120px;
+  display: none !important;
+  visibility: hidden;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    color: var(--whiteHover);
+  }
+}
+.displaynone {
+  display: none;
+  visibility: hidden;
+}
+
+// Desktop Navbar //
+.addBackground {
+  background: var(--whiteHover) !important;
+  box-shadow: var(--shadow);
+  transition: all 0.5s;
+ }
+
+.menubar {
+  width: 100%;
+  height: 10vh;
+  background: none;
+  @include flex(row);
+  justify-content: space-around;
+  position: fixed !important;
+  top: 0 !important;
+  z-index: 1111;
+
+  .logo {
+    color: var(--primColor) !important;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  nav {
+
+    .nav_item {
+      color: var(--primColor);
+      text-decoration: none;
+      font-size: var(--defaultsize);
+      font-size: 0.9rem;
+      margin: 0 6px;
+      transition: all 0.5s;
+      font-weight: 600;
+      text-transform: uppercase;
+      &:hover {
+        color: var(--textcolor);
+      }
+    }
+
+    .login_signup {
+      padding: 6px 15px;
+      margin: 0 25px;
+      border-radius: 50px;
+      font-size: 14px;
+      color: var(--textcolor);
+      background-color: var(--white);
+      box-shadow: var(--shadow);
+      transition: all 0.5s;
+      text-transform: capitalize;
+
+      .btn_icon {
+        position: relative;
+        left: 4px;
+        font-size: 1rem;
+      }
+      &:hover {
+        background: var(--primHover);
+        color: var(--white);
+      }
+    }
+  }
+}
+
+// Navbar Searchbar //
+.search_bar {
+  input{
+    transition: all ease .5s;
+    opacity: 0.4;
+    &:focus{
+    opacity: 0.8;
+
+    }
+  }
+  input,
+  .search_btn {
+    padding: 8px 15px;
+    border-radius: 50px 0 0 50px;
+  }
+  .search_btn {
+    border-radius: 0 50px 50px 0;
+    background-color: var(--primColor);
+    color: var(--white) !important;
+    transition: all 0.5s;
+    &:hover {
+      background-color: var(--primHover);
+    }
+  }
+}
+
+// login model form
+.login_model_form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100vh !important;
+  background: rgba(0, 0, 0, 0.822);
+  @include flex(row);
+  z-index: 1111;
+  transition: all ease 0.3s;
+  .model_form {
+    padding: 1rem 3rem;
+    height: auto !important;
+    background: var(--white);
+    border-radius: 50px;
+    box-shadow: var(--shadow);
+    .close_form {
+      color: var(--whiteHover);
+      position: relative !important;
+      left: 6.5rem;
+      top: 2rem !important;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: all ease 0.5s;
+      &:hover {
+        color: var(--textcolor);
+      }
+    }
+    .form_header {
+      width: 100%;
+      @include flex(column);
+      color: var(--textcolor);
+      h3 {
+        margin: 1rem;
+        text-transform: capitalize;
+      }
+      .avatar_circle {
+        background-color: var(--primColor);
+        border-radius: 100px;
+        .avatar {
+          font-size: 5rem;
+          color: var(--white);
+        }
+      }
+    }
+    .Signin_form_body {
+      width: 100% !important;
+      min-height: auto;
+      @include flex(column);
+
+      .input_group {
+        width: 80%;
+        input[type="email"],
+        input[type="password"],
+        input[type="text"],
+        input[type="submit"],
+        input[type="number"] {
+          width: 100%;
+          padding: 15px 25px;
+          margin-top: 1rem;
+          border-radius: 50px;
+          box-shadow: var(--shadow);
+          border: 2px solid var(--white);
+          transition: all ease 0.5s;
+          &:focus {
+            border: 2px solid var(--primColor);
+          }
+        }
+        .form_submit {
+          background: var(--primColor);
+          font-size: 1rem;
+          color: var(--white);
+          font-weight: 600;
+          text-transform: uppercase;
+          border-color: var(--primColor) !important;
+          padding: 15px 25px;
+          border-radius: 50px;
+          transition: all ease 0.5s;
+          &:hover {
+            background: var(--primHover);
+          }
+        }
+      }
+
+      .form_footer {
+        @include flex(column);
+        height: 15vh;
+
+        button {
+          font-size: 12px !important;
+          text-decoration: underline;
+          &:hover {
+            color: var(--textcolor);
+          }
+        }
+      }
+    }
+  }
+}
+
+.qouteform_header {
+  width: 100%;
+  height: auto;
+  @include flex(column);
+  h3 {
+    color: var(--textcolor);
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+}
+
+.getqouted {
+  margin: 1rem 0 2rem 0;
+}
+
+$primary-color: var(--primColor);
+$error-color: #e63946;
+$text-color: var(--textcolor);
+$color-white: var(--white);
+
+.container {
+  @include flex(column);
+  margin-top: 1rem;
+  label,
+  input {
+    color: var(--textcolor);
+  }
+
+  label {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  input {
+    width: 15rem !important;
+    padding: 12px 30px;
+    font-size: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 40px !important;
+    &:focus {
+      border: 1px solid var(--primColor);
+    }
+  }
+
+  .form-row {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-bottom: 0.5rem;
+  }
+
+  .submit_btn {
+    border-radius: 40px !important;
+    width: 15rem !important;
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--primColor) !important;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    padding: 12px 30px;
+    margin-top: 0.8rem;
+    text-transform: uppercase;
+    &:hover {
+      background: var(--primHover);
+    }
+  }
+
+  .input-error {
+    border-color: $error-color;
+  }
+
+  .error {
+    color: $error-color;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .disabled-btn {
+    cursor: not-allowed;
+    background: rgba($primary-color, 0.8);
+  }
+
+  .form_footer {
+    margin: 1rem 0;
+    text-align: center !important;
+
+    button {
+      color: var(--textcolor);
+      font-size: 0.8rem;
+    }
+  }
+}

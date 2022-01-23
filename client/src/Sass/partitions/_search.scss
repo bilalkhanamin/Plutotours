@@ -1,0 +1,82 @@
+@import "../mixins/flex";
+.search-container {
+  width: 100%;
+  height: auto;
+
+  .search_inner {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: -5rem !important;
+  }
+  .buttons-container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: -5rem;
+    z-index: 0;
+    .option_btn {
+      padding: 10px 20px;
+      color: var(--textcolor);
+      background: var(--white);
+      outline: none;
+       margin:0 2px;
+       border-radius: 10px 10px 0 0  ;
+      font-size: 0.8rem;
+      text-transform: capitalize;
+      cursor: pointer;
+      
+      .btn-icon{
+        font-size: 1rem;
+         position: relative;
+         top: 2px;
+         left: -3px;
+      }
+    }
+  }
+
+  
+  // SMALL SEARCH BAR //
+  .small_search_bar {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    form {
+      display: flex;
+      transition: all 0.5s;
+      input[type="text"],
+      input[type="submit"] {
+        padding: 1.5rem !important;
+        border-radius: 5rem 0 0 5rem;
+        font-size: 18px;
+        box-shadow: var(--shadow);
+        transition: all .5s;
+       
+      }
+      input[type="text"] {
+        width: 90% !important;
+         color: var(--primColor);
+        &::placeholder {
+          color: var(--primColor);
+        }
+      }
+
+      input[type="submit"] {
+        border-radius: 0 5rem 5rem 0;
+        width: 15%;
+        font-size: 1rem;
+        background: var(--primColor);
+        color: var(--white);
+        transition: all 0.5s;
+        &:hover {
+          background-color: var(--primHover);
+        }
+      }
+    }
+  }
+}
+
+.active_button{
+  background:var(--primColor) !important;
+  color:var(--white) !important;
+}

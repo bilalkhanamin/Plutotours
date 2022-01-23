@@ -1,0 +1,115 @@
+.package_details_wrapper {
+  width: 80%;
+  margin: auto !important;
+  height: 100vh;
+  margin-top: 5rem !important;
+
+  .package_name {
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: var(--primColor);
+    }
+  }
+  .package_loc_dur {
+    display: flex;
+    color: var(--textcolor) !important;
+    .pkg_location,
+    .pkg_duration {
+      margin: 5px 10px 0 0;
+      span {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  .package_image {
+    margin-top: 2rem !important;
+    width: 100% !important;
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+  .bottom_sticky {
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    position: sticky;
+    background: rgb(233, 233, 233);
+    border: 1px solid var(--primColor);
+    z-index: 1111;
+    box-shadow: var(--shadow);
+  }
+  .package_price {
+    margin-top: 1rem;
+    display: flex;
+    h3 {
+      color: var(--textcolor);
+      font-weight: 800;
+    }
+    span {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primColor);
+    }
+    i {
+      font-size: 12px;
+    }
+  }
+
+  .Book_btn {
+    background: var(--primColor);
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: 1px solid var(--primColor);
+    box-shadow: var(--shadow);
+    color: var(--white);
+    &:hover {
+      background: white;
+      color: var(--textcolor);
+      transition: all 1s;
+      border: 1px solid var(--primColor);
+    }
+  }
+}
+
+
+
+.pkg_details {
+  margin-top: 3rem;
+  min-height: auto !important;
+  color: var(--textcolor);
+}
+.tabstyle {
+  .nav-item {
+    color: var(--textcolor) !important;
+  }
+
+  .nav-item.active {
+    background: var(--primColor) !important;
+    border-radius: 30px;
+    color: white !important;
+    box-shadow: var(--shadow);
+  }
+  padding-bottom: 12px;
+  color: var(--textcolor) !important;
+  border-bottom: 1px solid #ccc;
+}
+
+.pkg_host{
+  display: flex;
+  color: var(--textcolor) !important;
+  align-items: center;
+
+  .host_icon{
+    color: var(--primColor);
+    font-size: 1.8rem !important;
+    margin-right: 10px;
+  }
+
+}

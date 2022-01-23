@@ -1,0 +1,133 @@
+:root {
+  --primHover: #018a4e;
+  --primColor:#03af65;
+  --secColor: #0066ff;
+  --white: #fcfbfb;
+  --whiteHover:#d1d1d1;
+  --textcolor: #445d7a;
+  --shadow: rgba(20, 20, 10, 0.2) 0px 5px 10px;
+  --shadowLight: rgba(20, 20, 10, 0.2) 0px 1px 3px;
+  --defaultsize:1rem;
+  --secText:0.9rem;
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 480px) {
+  #hero_heading {
+    font-size: 2rem !important;
+    line-height: 2rem;
+    margin: 5px 0;
+    width: 90%;
+  }
+  #Hero_title {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 14px !important;
+  }
+  .btn {
+    font-size: 0.9rem !important;
+    padding: 10px 20px !important;
+  }
+  .search_bar input,
+  .search_bar .search_btn {
+    padding: 10px 12px;
+    font-size: 12px !important;
+  }
+  .menu_btn {
+    font-size: 1.8rem !important;
+    margin-top: 10px;
+  }
+  .small_search_bar {
+    display: block;
+  }
+  .small_search_bar input,
+  .small_search_bar button {
+    width: auto;
+    font-size: 12px;
+    padding: 15px 20px !important;
+  }
+  #model_form {
+    width: 90% !important;
+  }
+  #nav_inner_container {
+    width: 90% !important;
+  }
+  #nav_inner_container #close_navbar {
+    font-size: 1.5rem;
+    left: 5.5rem;
+  }
+  .heading {
+    font-size: .8rem !important;
+    text-align: center !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .show_navbar .nav_inner_container {
+    width: 80% !important;
+  }
+  .inner-text h1 {
+    font-size: 3rem !important;
+  }
+  .small_search_bar {
+    width: 90% !important;
+    height: 10vh;
+    margin-top: 0.5rem;
+  }
+  .small_search_bar form input[type="text"],
+  .small_search_bar form input[type="submit"] {
+    font-size: small !important;
+    padding: 1.2rem !important;
+  }
+  .small_search_bar form input[type="submit"] {
+    width: 30% !important;
+  }
+  .signup_illustration {
+    display: none;
+    visibility: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .show_navbar .nav_inner_container .close_navbar {
+    display: block !important;
+    visibility: visible;
+  }
+  nav {
+    display: none;
+    visibility: none;
+    background: transparent;
+    color: var(--white);
+    font-size: 2rem;
+    margin-top: 5px;
+  }
+  .menu_btn {
+    display: block;
+    visibility: visible;
+    font-size: 2rem;
+  }
+  .menubar .logo {
+    display: none;
+  }
+  .login_model_form .model_form {
+    width: 70% !important;
+    height: 80vh !important;
+  }
+  .about_wrapper {
+    background: none;
+    height: 60vh !important;
+  }
+  .about_wrapper .about-container {
+    display: none;
+    visibility: hidden;
+  }
+  .buttons-container {
+    display: none !important;
+    visibility: none !important;
+  }
+  .search_inner {
+    margin-top: 2.5rem !important;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

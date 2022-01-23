@@ -1,0 +1,77 @@
+@import "../mixins/flex";
+
+.signup_container  {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--textcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   .signup_illustration {
+      width: 30%;
+      position: relative;
+      left: -5rem;
+    img{
+      width: 100%;
+    }
+    }
+    .close_Btn{
+      position: relative;
+      left: 60%;
+      top: 0% !important;
+      color: var(--textcolor);
+      font-size: 1.5rem;
+      transition: .5s ease;
+      &:hover{
+       color: var(--whiteHover);
+      }
+    }
+  .form_container {
+     @include flex(column);
+    background: var(--white);
+    padding: 1rem 4rem; 
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+    .form_header{
+      h3{
+        font-weight: 400;
+        text-transform: capitalize;
+      }
+    }
+     .form_body {
+      @include flex(column);
+      input[type="email"],
+      input[type="password"],
+      input[type="text"],
+      input[type="submit"] {
+        width: 100%;
+        padding: 15px 25px;
+        margin-top: 1rem;
+        border-radius: 50px;
+        box-shadow: var(--shadow);
+        border: 2px solid var(--white);
+        transition: all ease 0.5s;
+        &:focus {
+          border: 2px solid var(--primColor);
+        }
+      }
+
+      .form_submit {
+        background: var(--primColor);
+        font-size: .9rem;
+        color: var(--white);
+        font-weight: 600;
+        text-transform: uppercase;
+        border-color: var(--primColor) !important;
+        padding: 15px 25px;
+        border-radius: 50px;
+        transition: all ease 0.5s;
+          &:hover {
+          background: var(--primHover);
+        }
+      }
+    }
+  }
+}
+
+ 

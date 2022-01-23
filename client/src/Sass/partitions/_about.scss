@@ -1,0 +1,105 @@
+.about_wrapper {
+  width: 100%;
+  height: 140vh;
+  background: url("../../assets/images/bg3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 3rem;
+ }
+
+// About text and slider
+.about-container {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+
+  .about_illustration_container {
+    width: 40% !important;
+    height: auto !important;
+  }
+  .about_illustration {
+    width: 100%;
+     pointer-events: none;
+  }
+
+  .abt-text-con {
+    width: 40%;
+    text-align: left;
+
+    h4 {
+      text-transform: capitalize;
+      color: var(--primColor);
+    }
+    h1 {
+      color: var(--textcolor);
+      text-transform: capitalize;
+    }
+    p {
+      width: 100%;
+      font-size: 1rem;
+    }
+    .abt-btn {
+      background-color: var(--primColor);
+      padding: 10px 35px;
+      font-size: 1rem;
+      border-radius: 30px;
+      color: var(--white);
+      text-transform: capitalize;
+       font-weight: 600;
+      box-shadow: var(--shadow);
+      transition: all ease-in 0.5s;
+      &:hover {
+        background: var(--primHover);
+       }
+    }
+  }
+}
+
+
+// About slider
+.slider-wrapper {
+  overflow: hidden;
+   width: 100%;
+   margin-top: 5rem;
+    
+  .about-slider {
+    width: 220px !important;
+    min-height: 250px !important;
+    border-radius: 30px;
+    outline: none !important;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 7px;
+    margin-bottom: 2rem;
+  
+    img {
+      width: 100%;
+      padding: 20px;
+    }
+    a {
+      width: 80%;
+      padding: 10px 50px;
+      font-size: 1rem;
+      text-transform: capitalize;
+      color: var(--white);
+      text-decoration: none;
+      text-align: center;
+      border-radius: 30px;
+      position: relative !important;
+      top: 25px;
+      box-shadow: var(--shadow);
+      transition: all ease .5s;
+      font-weight: 600;
+      background: var(--primColor);
+      &:hover{
+         background: var(--primHover)
+      }
+    }
+  }
+}

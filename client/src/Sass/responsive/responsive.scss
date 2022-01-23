@@ -1,0 +1,166 @@
+@import "../Globals/variables";
+
+/* Extra small devices */
+@media only screen and (max-width: 480px) {
+  
+  // Landing page text //
+  #hero_heading {
+    font-size: 2rem !important;
+    line-height: 2rem;
+    margin: 5px 0;
+    width: 90%;
+  }
+  #Hero_title {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 14px !important;
+  }
+  .btn {
+    font-size: 0.9rem !important;
+    padding: 10px 20px !important;
+  }
+
+  // Navbar Search //
+  .search_bar {
+    input,
+    .search_btn {
+      padding: 10px 12px;
+      font-size: 12px !important;
+    }
+  }
+  .menu_btn {
+    font-size: 1.8rem !important;
+    margin-top: 10px;
+  }
+  .small_search_bar {
+    display: block;
+    input,
+    button {
+      width: auto;
+      font-size: 12px;
+      padding: 15px 20px !important;
+    }
+  }
+
+  // Login model form
+  #model_form {
+    width: 90% !important;
+  }
+
+  #nav_inner_container {
+    width: 90% !important;
+    #close_navbar {
+      font-size: 1.5rem;
+      left: 5.5rem;
+    }
+  }
+   // Packages heading
+   .heading{
+      font-size: .8rem !important;
+     text-align: center !important;
+   }
+  
+
+}
+
+@media only screen and(max-width:768px) {
+  // navbar stuff
+  .show_navbar {
+    .nav_inner_container {
+      width: 80% !important;
+    }
+  }
+
+  //landing text
+  .inner-text {
+    h1 {
+      font-size: 3rem !important;
+    }
+  }
+
+  //landing search bar
+  .small_search_bar {
+    width: 90% !important;
+    height: 10vh;
+    margin-top: 0.5rem;
+    form {
+      input[type="text"],
+      input[type="submit"] {
+        font-size: small !important;
+        padding: 1.2rem !important;
+      }
+      input[type="submit"] {
+        width: 30% !important;
+      }
+    }
+  }
+
+  // Signup form
+
+  .signup_illustration{
+    display: none;
+    visibility: none;
+  }
+
+  
+  
+}
+@media only screen and (max-width: 1024px) {
+  .show_navbar {
+    .nav_inner_container {
+      .close_navbar {
+        display: block !important;
+        visibility: visible;
+      }
+    }
+  }
+
+  // NAV BAR //
+  nav {
+    display: none;
+    visibility: none;
+    background: transparent;
+    color: var(--white);
+    font-size: 2rem;
+    margin-top: 5px;
+  }
+
+  .menu_btn {
+    display: block;
+    visibility: visible;
+    font-size: 2rem;
+  }
+  .menubar {
+    .logo {
+      display: none;
+    }
+  }
+
+  // Login model form
+  .login_model_form {
+    .model_form {
+      width: 70% !important;
+      height: 80vh !important;
+    }
+  }
+
+  // About section
+  .about_wrapper {
+    background: none;
+    height: 60vh !important;
+
+    .about-container {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  .buttons-container{
+    display: none !important;
+    visibility: none !important;
+  }
+  .search_inner{
+    margin-top: 2.5rem !important;
+  }
+}
